@@ -1,0 +1,43 @@
+
+version: 2
+sources:
+  - name: dvdrental
+    description: 'dvdrental database'
+    database: dev
+    schema: public
+    tables:
+      - name: customer
+        description: "data of customers who rent movies"
+        columns:
+          - name: customer_id
+            description: "this is the primary key of the table"
+            data_tests:
+              - unique
+              - not_null
+          - name: first_name
+            description: "this is the first name of the customer"
+            
+          - name: last_name
+            description: "this is the last name of the customer"
+            
+          - name: email
+            description: "this is the email address of the customer"
+            
+          - name: address_id
+            description: "this is the address id of the customer"
+            
+          - name: store_id
+            description: "this is the store id of the customer"
+            
+
+          
+# models:
+#       - name: my_second_model
+#         description: "this is the second model of the customer"
+#         columns:
+#           - name: id
+#             description: "The id for this table"
+#             data_tests:
+#               - unique
+#               - not_null
+  
