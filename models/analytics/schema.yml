@@ -29,8 +29,23 @@ sources:
           - name: store_id
             description: "this is the store id of the customer"
             
+      - name: rental
+        description: "data about rental"
+        columns:
+          - name: return_date
+            description: "this is the date of return"
+                  
+      - name: film
+        description: "data about film"
+        columns:
+          - name: film_id
+            description: "this is the primary key of the table"
 
-          
+      - name: inventory
+        description: "data about the inventory"
+        columns:
+          - name: inventory_id
+            description: "this is the primary key of the inventory"                 
 # models:
 #       - name: my_second_model
 #         description: "this is the second model of the customer"
