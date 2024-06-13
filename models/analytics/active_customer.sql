@@ -3,7 +3,8 @@ with active_customers as (
     where active = 1
 ),
 final as (
-    select first_name, 
+    select customer_id,
+    first_name, 
     last_name, 
     active
     from active_customers
