@@ -1,3 +1,4 @@
+{{ config(materialized = 'view')}} 
 with loyal_customers as (
     select * 
     from {{ ref('loyal_customers') }}
