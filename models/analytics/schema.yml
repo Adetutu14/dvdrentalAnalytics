@@ -26,26 +26,93 @@ sources:
           - name: address_id
             description: "this is the address id of the customer"
             
-          - name: store_id
-            description: "this is the store id of the customer"
-            
       - name: rental
         description: "data about rental"
         columns:
           - name: return_date
             description: "this is the date of return"
+
+          - name: rental_date
+            description: "this is the date of rental"  
+
+          - name: inventory_id
+            description: "this is one of the  primary key of the rnetal table"  
+          
                   
       - name: film
         description: "data about film"
         columns:
           - name: film_id
             description: "this is the primary key of the table"
+          - name: rental_duration
+            description: "this is the duration of rent of the film"  
 
       - name: inventory
         description: "data about the inventory"
         columns:
           - name: inventory_id
-            description: "this is the primary key of the inventory"                 
+            description: "this is the primary key of the inventory"
+          - name: film_id
+            description: "this is the film id of the inventory"  
+
+      - name: address
+        description: "data about the address"
+        columns:
+          - name: address_id
+            description: "this is the primary key of the address" 
+
+      - name: city
+        description: "data about the city"
+        columns:
+          - name: city_id
+            description: "this is the primary key of the city"
+
+          - name: city
+            description: "this is the name of the city"
+
+      - name: country
+        description: "data about the country"
+        columns:
+          - name: country_id
+            description: "this is the primary key of the country"
+          
+          - name: country
+            description: "this is the name of the country"
+
+      - name: payment
+        description: "data about the payment"
+        columns:
+          - name: amount
+            description: "this is the total purchase of the customer"
+          - name: rental_id
+            description: "this is the rental id the payment table"  
+
+      - name: category
+        description: "data about the category"
+        columns:
+          - name: category_id
+            description: "this is the primary key of the category"
+          - name: name
+            description: "this is the name of the category"
+
+      - name: film_category
+        description: "data about the category of film"
+        columns:
+          - name: category_id
+            description: "this is the pf the id key of the category"
+          - name: name
+            description: "this is the name of the category"
+                  
+      
+
+            
+    
+
+
+
+
+
+
 # models:
 #       - name: my_second_model
 #         description: "this is the second model of the customer"
