@@ -1,5 +1,6 @@
 with customer_name as (
-    SELECT first_name ||' '|| last_name AS full_name, 
+    SELECT cs.customer_id, 
+    first_name ||' '|| last_name AS full_name, 
     email, 
     address, 
     phone, 
@@ -15,7 +16,7 @@ with customer_name as (
     ON ct.country_id = cy.country_id
     JOIN {{ source('dvdrental', 'payment')}} as pm
     ON cs.customer_id = pm.customer_id
-    group by 1, 2, 3, 4, 5, 6
+    group by 1, 2, 3, 4, 5, 6, 7
     order by total_purchase desc
 ),
 
