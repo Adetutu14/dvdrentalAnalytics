@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: dvdrental
     description: 'dvdrental database'
-    database: dev
+    database: dvd
     schema: public
     tables:
       - name: customer
