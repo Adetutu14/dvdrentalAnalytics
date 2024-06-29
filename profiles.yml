@@ -1,0 +1,48 @@
+
+dvdrental_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: uo16351.eu-west-2
+      user: Adetutu14
+      password: Engrtutu14@
+      role: accountadmin
+      database: dev
+      warehouse: compute_wh
+      schema: transformation
+      threads: 10
+      client_session_keep_alive: true
+
+
+
+education:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: uo16351.eu-west-2
+      user: Adetutu14
+      password: Engrtutu14@
+      role: accountadmin
+      database: donordata
+      warehouse: compute_wh
+      schema: public
+      threads: 10
+      client_session_keep_alive: true
+
+
+donor_data:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: uo16351.eu-west-2
+      user: Adetutu14
+      password: Engrtutu14@
+      role: accountadmin
+      database: trial
+      warehouse: compute_wh
+      schema: practice
+      threads: 10
+      client_session_keep_alive: true
