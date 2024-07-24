@@ -10,7 +10,7 @@ dvdrental_analytics:
       role: accountadmin
       database: dvd
       warehouse: compute_wh
-      schema: transformation
+      schema: transform
       threads: 10
       client_session_keep_alive: true
 
