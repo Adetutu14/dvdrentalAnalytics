@@ -4,11 +4,11 @@ dvdrental_analytics:
   outputs:
     dev:
       type: snowflake
-      account: uo16351.eu-west-2
+      account: hy15878.eu-west-2
       user: Adetutu14
       password: Engrtutu14@
       role: accountadmin
-      database: dev
+      database: dvd
       warehouse: compute_wh
       schema: transformation
       threads: 10
